@@ -10,12 +10,6 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
 {
     public class IntensitiesController : ApiController
     {
-        private EntriesRepository _entriesRepository = null;
-
-        public IntensitiesController(EntriesRepository entriesRepository)
-        {
-            _entriesRepository = entriesRepository;
-        }
 
         [HttpGet]
         public IHttpActionResult Get()
