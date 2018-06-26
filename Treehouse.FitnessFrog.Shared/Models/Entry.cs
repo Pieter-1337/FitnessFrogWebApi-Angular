@@ -51,32 +51,42 @@ namespace Treehouse.FitnessFrog.Shared.Models
         /// <summary>
         /// The ID of the entry.
         /// </summary>
+        /// 
         public int Id { get; set; }
 
         /// <summary>
         /// The date of the entry. Should not include a time portion.
         /// </summary>
+        /// 
+        
         public DateTime Date { get; set; }
 
         /// <summary>
         /// The activity ID for the entry. The ID value should map to an ID in the activities collection.
         /// </summary>
+        /// 
         [Display(Name = "Activity")]
         public int ActivityId { get; set; }
 
         /// <summary>
         /// The activity for the entry.
         /// </summary>
+        /// 
+        
         public Activity Activity { get; set; }
 
         /// <summary>
         /// The duration for the entry (in minutes).
         /// </summary>
+        /// 
+        
         public decimal Duration { get; set; }
 
         /// <summary>
         /// The level of intensity for the entry.
         /// </summary>
+        /// 
+        
         public IntensityLevel Intensity { get; set; }
 
         /// <summary>
